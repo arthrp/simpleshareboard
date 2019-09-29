@@ -18,7 +18,6 @@ CONN.on("ReceiveMessage", (user, msg) => {
 });
 
 CONN.on("ReceiveCoordinates", (x, y) => {
-    // console.log("Received:", x, y);
     canvasHandler.handleReceiveCoords(x,y);
 });
 

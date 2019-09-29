@@ -30,7 +30,7 @@ class CanvasHandler {
 
         const point = this.getCanvasCoords(this._canv, ev);
         
-        console.log("sending", point.X, point.Y);
+        // console.log("sending", point.X, point.Y);
         conn.invoke("SendCoordinates", point.X, point.Y);
     }
 
