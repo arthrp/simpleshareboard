@@ -50,8 +50,8 @@ class CanvasHandler {
 
     private getCanvasCoords(canv: any, ev: any): Point {
         const rect = canv.getBoundingClientRect();
-        const x = Math.round(ev.clientX - rect.left);
-        const y = Math.round(ev.clientY - rect.top);
+        const x = ev.clientX - rect.left;
+        const y = ev.clientY - rect.top;
         return new Point(x,y);
     }
 }

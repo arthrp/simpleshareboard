@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 class DrawHub : Hub 
 {
-        public async Task SendCoordinates(int x, int y)
+        public async Task SendCoordinates(double x, double y)
         {
             await Clients.All.SendAsync("ReceiveCoordinates", x, y);
         }
